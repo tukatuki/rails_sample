@@ -24,7 +24,8 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      redirect_to @post, notice: 'Post was successfully created.'
+      #redirect_to @post, notice: 'Post was successfully created.'
+      redirect_to @post, notice: '投稿は成功しました'
     else
       render :new
     end
